@@ -9,6 +9,7 @@ const Professors = () => import('@/page/professors')
 const ProfessorsDetail = () => import('@/page/professorsdetail')
 const Customization = () => import('@/page/customization')
 const Contact = () => import('@/page/contact')
+const Test = () => import('@/page/test')
 
 Vue.use(Router)
 
@@ -62,6 +63,11 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: Test
     }
   ]
 })

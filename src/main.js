@@ -6,12 +6,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from './App'
 import router from './router'
 import common from './api/common'
-// import filters from './api/filters'
+import * as filters from './api/filters'
+
+Object.keys(filters).forEach(key => Vue.filter(key, filters[key]))
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.prototype.common = common
-// Object.keys(filters).forEach(k => Vue.filter(k, filters[k]))
 
 // 跳转后返回顶部
 router.afterEach((to, from, next) => {
