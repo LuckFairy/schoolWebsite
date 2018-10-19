@@ -124,17 +124,6 @@ s, i, em {
 }
 /*css初始化完成*/
 
-/* element样式覆盖 */
-.el-input.is-active .el-input__inner, .el-input__inner:focus {
-  border-color: #133B28 !important;
-}
-.el-select-dropdown__item.selected {
-  color: #133B28 !important;
-}
-/* .el-loading-spinner .path {
-  stroke: #133B28 !important;
-} */
-
 /* 公共样式 */
 .common-box {
   padding: 40px 0 50px;
