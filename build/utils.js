@@ -57,7 +57,7 @@ exports.cssLoaders = function (options) {
    * @return {String|Object}        ExtractTextPlugin对象或loader字符串
    */
   // generate loader string to be used with extract text plugin
-  function generateLoaders (loader, loaderOptions) {
+  function generateLoaders(loader, loaderOptions) {
     const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
     if (loader) {
@@ -78,7 +78,8 @@ exports.cssLoaders = function (options) {
     if (options.extract) {
       return ExtractTextPlugin.extract({
         use: loaders,
-        fallback: 'vue-style-loader'
+        fallback: 'vue-style-loader',
+        publicPath: '../../'
       })
     } else {
       return ['vue-style-loader'].concat(loaders)

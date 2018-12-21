@@ -1,7 +1,16 @@
 <template>
   <div class="banner">
-    <el-carousel trigger="click" height="650px" :indicator-position="indicatorStatus" :interval="5000">
-      <el-carousel-item v-for="(item, index) in bannerLists" :key="index" :style="`background: url(${item}) no-repeat center`"></el-carousel-item>
+    <el-carousel
+      trigger="click"
+      height="650px"
+      :indicator-position="indicatorStatus"
+      :interval="5000"
+    >
+      <el-carousel-item
+        v-for="(item, index) in bannerLists"
+        :key="index"
+        :style="`background: url(${item}) no-repeat center`"
+      ></el-carousel-item>
     </el-carousel>
   </div>
 </template>
@@ -9,7 +18,7 @@
 export default {
   data () {
     return {
-      bannerLists: ['../../static/images/banner.png', '../../static/images/banner.png', '../../static/images/banner.png', '../../static/images/banner.png'],
+      bannerLists: ['./static/images/banner.png', './static/images/banner.png', './static/images/banner.png', './static/images/banner.png'],
       indicatorStatus: 'inside'
     }
   },
@@ -24,13 +33,13 @@ export default {
   width: 12px;
   height: 12px;
   border-radius: 100%;
-  background-color: #AFAFAF;
+  background-color: #afafaf;
 }
 .banner .el-carousel__indicator.is-active button {
-  background-image: linear-gradient(-180deg, #FFB67E 0%, #FF7F48 100%);
+  background-image: linear-gradient(-180deg, #ffb67e 0%, #ff7f48 100%);
 }
 .banner .el-carousel__arrow {
   font-size: 20px;
-  background-color: rgba(31,45,61,.3);
+  background-color: rgba(31, 45, 61, 0.3);
 }
 </style>

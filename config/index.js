@@ -65,13 +65,13 @@ module.exports = {
     // 构建输出的二级目录
     assetsSubDirectory: 'static',
     // 构建发布的根目录，可配置为资源服务器域名或CDN域名。如果你的后台框架对静态资源url前缀要求，你仅需要改变这个参数。后台有要求的话，一般要加上./或者根据具体目录添加，不然引用不到静态资源
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
      */
     // 是否开启cssSourceMap
-    productionSourceMap: true,
+    productionSourceMap: false,
     // https://webpack.js.org/configuration/devtool/#production
     devtool: '#source-map',
 

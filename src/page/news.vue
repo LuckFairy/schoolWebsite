@@ -6,7 +6,7 @@
         <div class="list fl" v-for="(item, index) in listsArr" :key="index">
           <div class="list-poster">
             <a href="javascript:;" @click="toDetail(index)">
-              <img :src="item.poster" alt="">
+              <img :src="item.poster" alt>
               <div class="list-brief">{{ item.brief }}</div>
             </a>
           </div>
@@ -29,73 +29,73 @@ export default {
     return {
       listsArr: [
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '4月14-15日互联网EMBA总裁研修班课程课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '阳山智谷【金融EMBA】三月课程纪实',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '阳山智谷【金融EMBA】三月课程纪实',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '4月14-15日互联网EMBA总裁研修班课程课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '阳山智谷【金融EMBA】三月课程纪实',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/1.png',
+          poster: './static/images/1.png',
           title: '阳山智谷【金融EMBA】三月课程纪实',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
         },
         {
-          poster: '../../static/images/2.png',
+          poster: './static/images/2.png',
           title: '阳山智谷EMBA总裁高级研修班 M38班课课程',
           brief: '北清智库商学院互联网导师喻旭老师为同学们带来了«新零售创新战略与路径设计»，从产业的高度，用户的角…',
           time: '2018-04-04'
@@ -143,10 +143,14 @@ export default {
             bottom: -100px;
             left: 0;
             padding: 10px;
-            background-image: linear-gradient(-180deg, rgba(19,59,40,0.50) 0%, #133B28 100%);
-            color: #FFFFFF;
+            background-image: linear-gradient(
+              -180deg,
+              rgba(19, 59, 40, 0.5) 0%,
+              #133b28 100%
+            );
+            color: #ffffff;
             line-height: 18px;
-            transition: all .3s;
+            transition: all 0.3s;
           }
           &:hover {
             .list-brief {
@@ -159,20 +163,20 @@ export default {
         padding: 10px 10px 0;
         .list-title {
           font-size: 18px;
-          color: #133B28;
+          color: #133b28;
           font-weight: bold;
         }
         .list-info {
           margin-top: 6px;
           .fl {
-            opacity: .3;
+            opacity: 0.3;
           }
           .fr {
             width: 58px;
             height: 18px;
             line-height: 18px;
             text-align: center;
-            border: 1px solid #133B28;
+            border: 1px solid #133b28;
             font-size: 12px;
           }
         }
@@ -184,11 +188,11 @@ export default {
     height: 48px;
     line-height: 48px;
     margin: 0 auto;
-    border: 2px solid #133B28;
+    border: 2px solid #133b28;
     border-radius: 10px;
     text-align: center;
     font-size: 18px;
-    color: #133B28;
+    color: #133b28;
     cursor: pointer;
   }
 }
