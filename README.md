@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+[网页展示](https://luckfairy.github.io/schoolWebsite/)
+
 ## Build Setup
 
 ``` bash

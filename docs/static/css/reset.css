@@ -1,0 +1,150 @@
+/*css 初始化 */
+* {
+  box-sizing: border-box;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+/*去掉原样式中的小黑点*/
+ul, ol {
+  list-style: none;
+}
+
+/*输入字居中显示*/
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+/*防止拖动*/
+textarea {
+  resize: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle; /*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+  border-collapse: collapse; /*合并外连线*/
+}
+
+body {
+  font-size: 14px;
+  font-family: PingFangSC-light,'Microsoft YaHei','Arial','sans-serif';
+  color: #151515; 
+  background: #f3f5f4;
+  min-width: 1200px;
+}
+
+.clearfix::before, .clearfix::after {
+  /*清除浮动，最好最标准的写法*/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/  /*兼容IE6下的写法*/
+}
+
+a {
+  color: #133B28;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #133B28;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+s, i, em {
+  font-style: normal;/*将原来的样式去掉*/
+  text-decoration: none;/*可以去掉删除线和贯穿线的效果*/
+}
+
+.col-green {
+  color: #133B28 !important;
+}
+
+/*公共类*/
+.w {
+  /*版心 提取 */
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.al {
+  text-align: left;
+}
+
+.ac {
+  text-align: center;
+}
+
+.ar {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*css初始化完成*/
+
+/* 公共样式 */
+.common-box {
+  padding: 40px 0 50px;
+}
+.common-box .w {
+  background: #FFFFFF;
+  box-shadow: 0 0 8px 0 rgba(19,59,40,0.25);
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.common-box .title {
+  font-size: 36px;
+  color: #133B28;
+  letter-spacing: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.common-box .time {
+  font-size: 18px;
+  color: #888888;
+  text-align: center;
+}

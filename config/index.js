@@ -58,10 +58,10 @@ module.exports = {
   build: {
     // 构建输出的index.html文件
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/index.html'),
+    index: path.resolve(__dirname, '../docs/index.html'),
     // 构建输出的静态资源路径
     // Paths
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../docs'),
     // 构建输出的二级目录
     assetsSubDirectory: 'static',
     // 构建发布的根目录，可配置为资源服务器域名或CDN域名。如果你的后台框架对静态资源url前缀要求，你仅需要改变这个参数。后台有要求的话，一般要加上./或者根据具体目录添加，不然引用不到静态资源
