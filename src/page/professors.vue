@@ -25,7 +25,7 @@ export default {
     return {
       teachersArr: [
         {
-          avator: './static/images/3.png',
+          avator: ' static/images/3.png',
           name: '1房西苑 教授',
           brief: '北清智库首席资本导师<br>北京大学中国国情研究中心  研究员<br>美国项目管理协会会员'
         },
