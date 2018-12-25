@@ -6,7 +6,7 @@
         <div class="poster fl">
           <div class="teachers-list">
             <div class="avator">
-              <img src="./static/images/3.png" alt>
+              <img src="${require(`./static/images/3.png `)}" alt>
             </div>
             <div class="intro">
               <div class="name">房西苑 教授</div>

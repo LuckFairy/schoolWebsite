@@ -10,7 +10,6 @@ import common from './api/common'
 import * as filters from './api/filters'
 
 Object.keys(filters).forEach(key => Vue.filter(key, filters[key]))
-
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.prototype.common = common

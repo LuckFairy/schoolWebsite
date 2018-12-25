@@ -2,13 +2,21 @@
   <div class="header">
     <div class="top">
       <div class="logo fl">
-        <router-link to="/"><img src="@/assets/logo.png" alt="阳山智谷商学院"></router-link>
+        <router-link to="/">
+          <img src="@/assets/logo.png" alt="阳山智谷商学院">
+        </router-link>
       </div>
       <div class="tel fr">咨询热线：400-888-8888</div>
     </div>
     <div class="menu">
       <div class="center">
-        <router-link :to="item.link" v-for="(item, index) in menuLists" :key="index" :class="{'active': activeIndex === index}" @click.native="changeIndex(index)">{{ item.title }}</router-link>
+        <router-link
+          :to="item.link"
+          v-for="(item, index) in menuLists"
+          :key="index"
+          :class="{'active': activeIndex === index}"
+          @click.native="changeIndex(index)"
+        >{{ item.title }}</router-link>
       </div>
     </div>
   </div>
@@ -72,8 +80,8 @@ export default {
   z-index: 10;
   .top {
     height: 70px;
-    background-color: #133B28;
-    background: url('../assets/Group.png');
+    background-color: #133b28;
+    background: url("../assets/Group.png");
     padding: 0 70px;
     color: #fff;
     position: relative;
@@ -94,7 +102,7 @@ export default {
   .menu {
     height: 50px;
     background-color: #fff;
-    box-shadow: 0 4px 4px 0 rgba(19,59,40,0.25);
+    box-shadow: 0 4px 4px 0 rgba(19, 59, 40, 0.25);
     text-align: center;
     .center {
       display: inline;
@@ -104,11 +112,12 @@ export default {
       height: 100%;
       line-height: 50px;
       padding: 0 35px;
-      color: #133B28;
+      color: #133b28;
       font-size: 18px;
       margin: 0 11px;
-      &:hover, &.active {
-        background-color: #133B28;
+      &:hover,
+      &.active {
+        background-color: #133b28;
         color: #fff;
       }
     }
