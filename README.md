@@ -1,8 +1,8 @@
-# yszg
+# 介绍
 
 > A Vue.js project
 
-[网页展示](https://luckfairy.github.io/schoolWebsite/)
+在线链接：[https://luckfairy.github.io/schoolWebsite](https://luckfairy.github.io/schoolWebsite/)
 
 ## Build Setup
 
